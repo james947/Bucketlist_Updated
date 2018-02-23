@@ -57,9 +57,11 @@ def addActivities():
 
 @app.route('/delete<int:id>')
 def delete(id):
-    if id in POSTS:
-        POSTS.remove(id)
-        return redirect(url_for('dashboard'))
+    POSTS=[]
+    for id in POSTS:
+        if id in POSTS:
+            POSTS.remove(id)
+            return redirect(url_for('dashboard'))
 
 
 
