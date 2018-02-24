@@ -37,6 +37,7 @@ def signup():
         USERS.append(new_user)
         #redirect back to the login page
         return redirect(url_for('index'))
+    return render_template('signup.html')
 
 #shows all the posts
 @app.route('/dashboard')
