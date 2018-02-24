@@ -1,6 +1,7 @@
 from flask import Flask,redirect,render_template,request, url_for, flash
-from users import User,Bucketlist
+from .users import User,Bucketlist
 from datetime import datetime
+
 app = Flask(__name__)
 
 #an empty dict to store users

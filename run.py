@@ -1,4 +1,5 @@
-from views import app
+from app.views import app
+from app.users import User
  
  
 if __name__ == '__main__':
